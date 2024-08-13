@@ -19,21 +19,28 @@ body {
 .logo,
 .nav__bar,
 .header__btn,
-.nav__bar ul li {
+.nav__list,
+.nav__item {
   display: inline-block;
+}
+
+.logo {
+  margin-right: 229px;
+  vertical-align: middle;
 }
 
 .header__wr {
   padding: 30px 0 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
   border-bottom: 1px solid rgba(70, 163, 89, 0.5);
 }
 
-.nav__bar ul {
-  display: flex;
-  gap: 50px;
+
+.nav__item {
+  margin-right: 30px;
+}
+
+.nav__list {
   font-size: 16px;
   font-weight: 400;
   line-height: 20.11px;
@@ -41,13 +48,13 @@ body {
 
 .nav__link {
   color: #3d3d3d;
-  display: flex;
-  align-items: center;
   height: 35px;
+  display: block;
 }
 
 .nav__link {
   position: relative;
+  
 }
 
 .nav__link::after {
@@ -86,6 +93,7 @@ body {
   padding-left: 17px;
   position: relative;
   cursor: pointer;
+  margin-left: 370px;
 }
 
 .login:hover {
@@ -99,9 +107,9 @@ body {
 }
 
 .hero__wr {
-  display: flex;
-
-  background: linear-gradient(
+  
+display: inline-flex;
+background: linear-gradient(
     97.77deg,
     rgba(245, 245, 245, 0.5) -23.46%,
     rgba(245, 245, 245, 0.5) 107.51%
@@ -118,7 +126,7 @@ body {
   letter-spacing: 0.1em;
   color: #3d3d3d;
   margin-bottom: 7px;
-  padding-top: 68px;
+  margin-top: 68px;
   text-transform: uppercase;
 }
 .title {
