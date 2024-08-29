@@ -19,7 +19,7 @@ body {
 }
 button {
   cursor: pointer;
-  background:none
+  background: none;
 }
 .container {
   max-width: 1232px;
@@ -42,23 +42,112 @@ button {
   border-bottom: 1px solid rgba(70, 163, 89, 0.5);
 }
 
-.nav__bar ul {
+.nav__bar-list {
   display: flex;
   gap: 50px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20.11px;
 }
-
+/* dropdown */
+.nav__bar-item--dropdown {
+  position: relative;
+}
+.nav__bar-wr {
+  display: none;
+  position: absolute;
+  padding-top: 37px;
+  left: -25%;
+  top: 100%;
+  list-style-type: none;
+  z-index: 1000;
+}
 .nav__link {
-  color: #3d3d3d;
-  display: flex;
-  align-items: center;
-  height: 35px;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  color: black;
 }
 
+
+.nav__bar-dropdown {
+  background-color: #edf6ee;
+}
+.nav__bar-item--dropdown:hover > .nav__bar-wr {
+  display: block;
+}
+
+
+.nav__bar-dropdown-link {
+  padding: 10px 20px;
+  display: block;
+  color: black;
+  width: 188px;
+}
+
+.nav__bar-dropdown-item:hover, 
+.nav__bar-dropdown-link:hover,
+.nav__bar-dropdown-iner:hover  {
+  background-color: #1a712a;
+  color: #ffffff;
+  max-width: 100%;
+  font-weight: bold;
+}
+
+.nav__bar-dropdown-iner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.nav__bar-dropdown-iner::after {
+  content: "";
+  display: block;
+  background-image: url(/float/img/right.svg);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  padding-left: 8px;
+}
+.nav__bar-dropdown-iner:hover:after {
+  content: "";
+  display: block;
+  background-image: url(/float/img/left.svg);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+}
+.nav__bar-dropdown-iner {
+  position: relative;
+  
+}
+.nav__bar-dropdown-iner:hover .nav__bar-iner-list {
+  display: block;
+  width: 100%;
+}
+.nav__bar-iner-list {
+  position: absolute;
+  left: 100%;
+  bottom: -200%;
+  background-color: #edf6ee;
+  max-width: 188px;
+  display: none;
+}
+.nav__bar-iner-item {
+  margin: 0;
+  width: 100%;
+}
+ .iner{
+  font-weight: 200;
+}
+
+/* dropdown */
 .nav__link {
   position: relative;
+  color: #3d3d3d;
+}
+.nav__link:hover {
+  color: #46a358;
 }
 
 .nav__link::after {
@@ -174,7 +263,7 @@ span {
   display: inline;
 }
 
-.header {
+/* .header {
   margin-bottom: 12px;
 }
 
@@ -245,7 +334,7 @@ span {
 
 .login:hover {
   transform: scale(1.1);
-}
+} */
 /* hero */
 
 .section {

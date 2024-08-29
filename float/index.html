@@ -15,11 +15,55 @@
           <img src="./img/Logo.svg" alt="GreenShop" />
         </div>
         <nav class="nav__bar">
-          <ul>
-            <li><a class="nav__link active" href="#">Home</a></li>
-            <li><a class="nav__link" href="#">Shop</a></li>
-            <li><a class="nav__link" href="#">Plant Care</a></li>
-            <li><a class="nav__link" href="#">Blogs</a></li>
+          <ul class="nav__bar-list">
+            <li class="nav__bar-item">
+              <a class="nav__link active" href="#">Home</a>
+            </li>
+            <li class="nav__bar-item">
+              <a class="nav__link" href="#">Shop</a>
+            </li>
+            <li class="nav__bar-item nav__bar-item--dropdown">
+              <a class="nav__link" href="#">Plant Care</a>
+              <div class="nav__bar-wr">
+                <ul class="nav__bar-dropdown">
+                  <li class="nav__bar-dropdown-item">
+                    <a class="nav__bar-dropdown-link" href="#">Drainage</a>
+                  </li>
+                  <li class="nav__bar-dropdown-item">
+                    <a class="nav__bar-dropdown-link" href="#">Fungicides</a>
+                  </li>
+                  <li class="nav__bar-dropdown-item">
+                    <a class="nav__bar-dropdown-link" href="#">Fertilizer</a>
+                  </li>
+                  <li class="nav__bar-dropdown-item  nav__bar-dropdown-iner ">
+                    <a class="nav__bar-dropdown-link" href="#">Priming</a>
+                    <ul class="nav__bar-iner-list">
+                      <li class="nav__bar-iner-item">
+                        <a class="nav__bar-dropdown-link iner" href="#">Universal </a>
+                      </li>
+                      <li class="nav__bar-iner-item">
+                        <a class="nav__bar-dropdown-link iner" href="#">For Ficus</a>
+                      </li>
+                      <li class="nav__bar-iner-item">
+                        <a class="nav__bar-dropdown-link iner" href="#">For Cacti</a>
+                      </li>
+                      <li class="nav__bar-iner-item">
+                        <a class="nav__bar-dropdown-link iner" href="#">For Citrus</a>
+                      </li>
+                      <li class="nav__bar-iner-item">
+                        <a class="nav__bar-dropdown-link iner" href="#">For those in bloom</a>
+                      </li>
+                      <li class="nav__bar-iner-item">
+                        <a class="nav__bar-dropdown-link iner" href="#">For Orchids</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav__bar-item">
+              <a class="nav__link" href="#">Blogs</a>
+            </li>
           </ul>
         </nav>
         <div class="header__btn">
@@ -184,7 +228,7 @@
               <div class="product__img">
                 <a href="#"><img src="./img/image2.png" /></a>
 
-                <div class="product__list-btn product__list--active">
+                <div class="product__list-btn product__list--btn">
                   <button class="btn" type="button">
                     <svg
                       width="20"
