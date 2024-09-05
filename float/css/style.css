@@ -156,7 +156,6 @@ button {
   border: 25px;
 }
 
-
 .nav__link::after {
   width: 0;
   transition: 0.3s;
@@ -823,10 +822,9 @@ footer {
 }
 .footer__top {
   padding: 0 25px;
-  border-right: 1px solid rgba(70, 163, 88, 0.1);
 }
-.footer__top-none {
-  border-right: none;
+.footer__top:not(:nth-child(3)) {
+  border-right: 1px solid rgba(70, 163, 88, 0.1);
 }
 
 .footer__top-title {
@@ -856,6 +854,7 @@ footer {
 }
 
 .placeholder {
+  border-radius: 6px;
   padding: 12px 86px 12px 11px;
   background-color: #fff;
   font-weight: 400;
@@ -954,6 +953,10 @@ footer {
 }
 .Union {
   padding: 8px 6px;
+}
+.footer__med-list {
+  display: flex;
+  gap: 10px;
 }
 .footer__bot-img {
   margin: 20px 0 33px 0;
