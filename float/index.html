@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="preoloder__wr">
+      <div class="anime"></div>
+    </div>
     <header class="header container">
       <div class="header__wr">
         <div class="logo">
@@ -85,12 +88,15 @@
           </button>
           <button class="font" type="button"><i class="icon-cart"></i></button>
 
-          <a class="login" href="./form/index.html">
-            <img src="./img/Logout.png" />Login</a
-          >
+          <a class="login" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <use href="./svg/sprite.svg#logout"></use>
+            </svg>
+            Login</a>
         </div>
       </div>
     </header>
+
     <main>
       <div class="hero__main container">
         <div class="hero__wr">
@@ -114,6 +120,7 @@
         </div>
       </div>
     </main>
+
     <!-- aside -->
     <section class="container">
       <div class="main__container">
@@ -122,34 +129,104 @@
             <h2 class="aside__tittle">Categories</h2>
             <ul class="aside__list">
               <li class="aside__item">
-                <a href="#" class="aside__link-active">House Plants</a>
+                <a href="#" class="aside__link aside__link-active"
+                  >House Plants<span class="size__span size__span--active"
+                    >(33)
+                  </span></a
+                >
               </li>
               <li class="aside__item">
-                <a href="#" class="aside__link">Potter Plants</a>
+                <a href="#" class="aside__link"
+                  >Potter Plants
+                  <span class="size__span">(12) </span>
+                </a>
               </li>
               <li class="aside__item">
-                <a href="#" class="aside__link">Seeds</a>
+                <a href="#" class="aside__link"
+                  >Seeds
+                  <span class="size__span">(65) </span>
+                </a>
               </li>
               <li class="aside__item">
-                <a href="#" class="aside__link">Small Plants</a>
+                <a href="#" class="aside__link"
+                  >Small Plants
+                  <span class="size__span">(39) </span>
+                </a>
               </li>
               <li class="aside__item">
-                <a href="#" class="aside__link">Big Plants</a>
+                <a href="#" class="aside__link"
+                  >Big Plants
+                  <span class="size__span">(23) </span>
+                </a>
               </li>
               <li class="aside__item">
-                <a href="#" class="aside__link">Succulents</a>
+                <a href="#" class="aside__link"
+                  >Succulents
+                  <span class="size__span">(17) </span>
+                </a>
               </li>
               <li class="aside__item">
-                <a href="#" class="aside__link">Trerrariums</a>
+                <a href="#" class="aside__link"
+                  >Trerrariums
+                  <span class="size__span">(19) </span>
+                </a>
               </li>
               <li class="aside__item">
-                <a href="#" class="aside__link">Gardening</a>
+                <a href="#" class="aside__link"
+                  >Gardening<span class="size__span">(13) </span></a
+                >
               </li>
               <li class="aside__item">
-                <a href="#" class="aside__link">Accessories</a>
+                <a href="#" class="aside__link"
+                  >Accessories <span class="size__span">(18) </span></a
+                >
               </li>
             </ul>
           </nav>
+          <div class="aside__input">
+            <h2 class="aside__tittle">Price Range</h2>
+            <form class="main__form" action="">
+              <input
+                type="range"
+                name="range"
+                value="1000"
+                min="39"
+                max="1230"
+                id="inputRange"
+                class="inputRange"
+              />
+              <div class="one"></div>
+            </form>
+
+            <ul class="aside__list">
+              <li class="aside__item aside__item--size">
+                Price: <span class="aside__span">$39 - $1230 </span>
+              </li>
+              <li class="aside__item">
+                <button class="aside__btn" type="button">Filter</button>
+              </li>
+            </ul>
+          </div>
+          <div class="aside__size">
+            <h2 class="aside__tittle">Size</h2>
+            <ul class="aside__list">
+              <li class="aside__item">
+                <a href="#" class="aside__link"
+                  >Small <span class="size__span">(119) </span></a
+                >
+              </li>
+              <li class="aside__item">
+                <a href="#" class="aside__link"
+                  >Medium <span class="size__span">(86)</span></a
+                >
+              </li>
+              <li class="aside__item">
+                <a href="#" class="aside__link"
+                  >Large <span class="size__span">(78)</span></a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="aside__img">
             <a href="#"
               ><img src="./img/Super Sale Banner.png" class="aside__sale"
@@ -371,7 +448,7 @@
               <div class="product__img">
                 <a href="#"><img src="./img/image9.png" /></a>
 
-                    <div class="product__list-btn product__list--btn">
+                <div class="product__list-btn product__list--btn">
                   <button class="btn" type="button">
                     <i class="font icon-cart"></i>
                   </button>
@@ -692,45 +769,38 @@
             <div class="footer__bot-img">
               <ul class="footer__med-list">
                 <li class="footer__med-item">
-                  <a class="footer__med-link" href="#!"
-                    ><img
-                      class="footer__link Facebook"
-                      src="./img/Facebook.png"
-                      alt="Facebook"
-                  /></a>
+                  <a class="footer__med-link footer__link" href="#!">
+                     <svg  xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" >
+                          <use href="./svg/sprite.svg#facebook"></use> 
+                      </svg>
+                  </a>
+                  <a href="#" class="social-link"></a>
                 </li>
                 <li class="footer__med-item">
-                  <a class="footer__med-link" href="#!"
-                    ><img
-                      class="footer__link Instagram"
-                      src="./img/Instagram.png"
-                      alt="Instagram"
-                  /></a>
+                  <a class="footer__med-link footer__link" href="#!">
+                      <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" >
+                          <use href="./svg/sprite.svg#instagram"></use> 
+                      </svg></a>
                 </li>
                 <li class="footer__med-item">
-                  <a class="footer__med-link" href="#!"
-                    ><img
-                      class="footer__link Twitter"
-                      src="./img/Twitter.png"
-                      alt="Twitter"
-                  /></a>
+                  <a class="footer__med-link footer__link" href="#!"> 
+                      <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" >
+                          <use href="./svg/sprite.svg#twitter"></use> 
+                      </svg></a>
                 </li>
                 <li class="footer__med-item">
-                  <a class="footer__med-link" href="#!"
-                    ><img
-                      class="footer__link Linkedin"
-                      src="./img/Linkedin.png"
-                      alt="Linkedin"
-                  /></a>
+                  <a class="footer__med-link footer__link"  href="#!">
+                      <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" >
+                          <use href="./svg/sprite.svg#link"></use> 
+                      </svg></a>
                 </li>
 
                 <li class="footer__med-item">
-                  <a class="footer__med-link" href="#!"
-                    ><img
-                      class="footer__link Union"
-                      src="./img/Union.png"
-                      alt="Union"
-                  /></a>
+                  <a class="footer__med-link footer__link" href="#!"> 
+                      <svg  xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14" >
+                          <use href="./svg/sprite.svg#union"></use> 
+                      </svg>
+                    </a>
                 </li>
               </ul>
             </div>

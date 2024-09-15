@@ -30,6 +30,74 @@ button {
   padding-right: 16px;
   margin-bottom: 50px;
 }
+/* loader */
+.preoloder__wr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgb(255, 254, 254);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 5s ease-in-out forwards;
+}
+
+.anime {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top: 3px solid #1a712a;
+  border-bottom: 3px solid #52c368;
+  z-index: 1001;
+  animation: spin 3s ease-in-out forwards;
+}
+
+.anime::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  border-radius: 50%;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #3d3d3d;
+  border-bottom: 3px solid #727272;
+  animation: spin 3s ease-in-out forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .header {
   margin-bottom: 12px;
 }
@@ -118,7 +186,8 @@ button {
 .nav__bar-dropdown-iner {
   position: relative;
 }
-.nav__bar-dropdown-iner:hover .nav__bar-iner-list {
+
+.nav__bar-dropdown-iner:hover  .nav__bar-iner-list {
   display: block;
   width: 100%;
 }
@@ -176,7 +245,7 @@ button {
   color: #ffffff;
   background: #46a358;
   border-radius: 6px;
-
+  display: flex;
   padding: 7px 17px 7px 17px;
   position: relative;
   cursor: pointer;
@@ -196,6 +265,13 @@ button {
   color: #46a358;
   transition: 1s;
 }
+.header__log {
+  width: 20;
+  display: block;
+  height: 20;
+}
+
+
 /* hero */
 
 .section {
@@ -236,10 +312,7 @@ button {
 }
 
 span {
-  font-size: 70px;
-  font-weight: 900;
-  line-height: 70px;
-  color: #46a358;
+   color: #46a358;
 }
 
 .main__plant {
@@ -345,6 +418,7 @@ span {
 }
 .aside {
   max-width: 310px;
+  padding-right: 31px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -368,6 +442,7 @@ span {
   font-weight: 400;
   line-height: 40px;
   color: #3d3d3d;
+  display: contents;
 }
 
 .aside__link-active {
@@ -383,10 +458,89 @@ span {
   line-height: 40px;
   color: #46a358;
 }
+.aside__link:hover > .size__span {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #46a358;
+}
+
 .aside__img {
   margin-left: -30px;
 }
+.main__form {
+  margin: 20px 0;
+  position: relative;
+}
+.inputRange {
+  appearance: none;
+  width: 209px;
+  height: 6px;
+  border-radius: 9998px;
+  background: #46a358;
+  cursor: pointer;
+  margin-left: 18px;
+  display: block;
+}
 
+.inputRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: #4caf50;
+  box-shadow: none;
+}
+.one {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 50%;
+  left: 6%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: #4caf50;
+  transform: translateY(-50%);
+   
+}
+.aside__span {
+  font-weight: 700;
+  color: #46a358;
+}
+.aside__btn {
+  border-radius: 6px;
+  background-color: #46a358;
+  padding: 8px 26px 7px 25px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  margin-top: 15px;
+}
+
+.aside__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aside__item--size {
+  display: inline-block;
+}
+.size__span {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 267%;
+
+  color: #3d3d3d;
+}
+.size__span--active {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #46a358;
+}
 /* right */
 .plant__wr {
   margin-left: 29px;
@@ -869,6 +1023,11 @@ footer {
 .footer__link {
   border: 2px solid rgba(70, 163, 88, 0.2);
   border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer__bot-title {
   font-weight: 400;
