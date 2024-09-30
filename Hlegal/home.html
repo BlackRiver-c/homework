@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hlegal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="sass/main.css" />
   </head>
   <body>
@@ -197,7 +201,7 @@
                 </ul>
               </div>
             </div>
-            <div class="legal__services">
+            <div id="legal__info" class="legal__services">
               <div class="legal__services-page">
                 <a class="legal__services-link" href="#!"
                   >Services
@@ -217,7 +221,7 @@
                 </h2>
               </div>
             </div>
-            <div id="legal__info" class="legal__card">
+            <div class="legal__card">
               <div class="legal__card-wr">
                 <ul class="legal__card-list">
                   <li class="legal__card-item">
@@ -364,35 +368,98 @@
       </section>
       <section class="news">
         <div class="container">
-          <div class="news__wr">
-            <div class="news__img">
-              <img class="news__pic" src="./img/Team-1.jpg" alt="news" />
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="news__wr">
+                  <div class="news__img">
+                    <img class="news__pic" src="./img/Team-1.jpg" alt="news" />
+                  </div>
+                  <div class="news__text">
+                    <a class="legal__services-link" href="#!"
+                      >команда
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="8"
+                        height="11"
+                        viewBox="0 0 8 11"
+                      >
+                        <use xlink:href="./img/sprite.svg#servarow"></use>
+                      </svg>
+                    </a>
+                    <h2 class="news__title">
+                      Ми звикли брати на себе відповідальність та завжди
+                      гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
+                      коли більшість безсилі.
+                    </h2>
+                    <span class="news__span">Олександр Олександровський</span>
+                    <span class="news__span">Керуючий партнер</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news__wr">
+                  <div class="news__img">
+                    <img class="news__pic" src="./img/Team-1.jpg" alt="news" />
+                  </div>
+                  <div class="news__text">
+                    <a class="legal__services-link" href="#!"
+                      >команда
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="8"
+                        height="11"
+                        viewBox="0 0 8 11"
+                      >
+                        <use xlink:href="./img/sprite.svg#servarow"></use>
+                      </svg>
+                    </a>
+                    <h2 class="news__title">
+                      Ми звикли брати на себе відповідальність та завжди
+                      гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
+                      коли більшість безсилі.
+                    </h2>
+                    <span class="news__span">Олександр Олександровський</span>
+                    <span class="news__span">Керуючий партнер</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="news__wr">
+                  <div class="news__img">
+                    <img class="news__pic" src="./img/Team-1.jpg" alt="news" />
+                  </div>
+                  <div class="news__text">
+                    <a class="legal__services-link" href="#!"
+                      >команда
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="8"
+                        height="11"
+                        viewBox="0 0 8 11"
+                      >
+                        <use xlink:href="./img/sprite.svg#servarow"></use>
+                      </svg>
+                    </a>
+                    <h2 class="news__title">
+                      Ми звикли брати на себе відповідальність та завжди
+                      гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
+                      коли більшість безсилі.
+                    </h2>
+                    <span class="news__span">Олександр Олександровський</span>
+                    <span class="news__span">Керуючий партнер</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="news__text">
-              <a class="legal__services-link" href="#!"
-                >команда
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="8"
-                  height="11"
-                  viewBox="0 0 8 11"
-                >
-                  <use xlink:href="./img/sprite.svg#servarow"></use>
-                </svg>
-              </a>
-              <h2 class="news__title">
-                Ми звикли брати на себе відповідальність та завжди гарантуємо
-                чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
-                безсилі.
-              </h2>
-              <span class="news__span">Олександр Олександровський</span>
-              <span class="news__span">Керуючий партнер</span>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination achievements__pag">
+              <div class="pag pag--active"></div>
+              <div class="pag"></div>
+              <div class="pag"></div>
             </div>
-          </div>
-          <div class="achievements__pag">
-            <div class="pag pag--active"></div>
-            <div class="pag"></div>
-            <div class="pag"></div>
           </div>
         </div>
       </section>
@@ -590,6 +657,7 @@
           © 2021 HLEGAL Law company, LLC
         </div>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="./js/main.js"></script>
     </footer>
   </body>

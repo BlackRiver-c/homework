@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hlegal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="sass/main.css" />
   </head>
   <body>
@@ -42,7 +46,12 @@
       <div class="container">
         <div class="header__wr">
           <div class="header__logo">
-           <a href="./home.html"><img src="../Hlegal/img/header.png" alt="Hlegal" class="header__img" /></a>
+            <a href="./home.html"
+              ><img
+                src="../Hlegal/img/header.png"
+                alt="Hlegal"
+                class="header__img"
+            /></a>
             <a class="header__logo--link" href="#!">about us</a>
           </div>
           <div class="header__menu">
@@ -205,36 +214,105 @@
       <section class="achievements">
         <div class="container">
           <h2 class="achievements__title">achievements</h2>
-          <div class="achievements__wr">
-            <div class="achievements__card">
-              <img
-                class="achievements__card-img"
-                src="./img/hero_legal.png"
-                alt="legal"
-              />
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="achievements__wr">
+                  <div class="achievements__card">
+                    <img
+                      class="achievements__card-img"
+                      src="./img/hero_legal.png"
+                      alt="legal"
+                    />
+                  </div>
+                  <div class="achievements__card">
+                    <img
+                      class="achievements__card-img"
+                      src="./img/hero_uri.png"
+                      alt="uri"
+                    />
+                  </div>
+                  <div class="achievements__card">
+                    <img
+                      class="achievements__card-img"
+                      src="./img/hero_lider.png"
+                      alt="lider"
+                    />
+                  </div>
+                  <div class="achievements__card">
+                    <img
+                      class="achievements__card-img"
+                      src="./img/hero_uif.png"
+                      alt="uif"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="achievements__wr">
+                  <div class="achievements__card">
+                    <img
+                      class="achievements__card-img"
+                      src="./img/hero_legal.png"
+                      alt="legal"
+                    />
+                  </div>
+                  <div class="achievements__card">
+                    <img
+                      class="achievements__card-img"
+                      src="./img/hero_uri.png"
+                      alt="uri"
+                    />
+                  </div>
+                  <div class="achievements__card">
+                    <img
+                      class="achievements__card-img"
+                      src="./img/hero_lider.png"
+                      alt="lider"
+                    />
+                  </div>
+                  <div class="achievements__card">
+                    <img
+                      class="achievements__card-img"
+                      src="./img/hero_uif.png"
+                      alt="uif"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="achievements__wr">
+                  <div class="achievements__card">
+                    <img
+                      class="achievements__card-img"
+                      src="./img/hero_legal.png"
+                      alt="legal"
+                    />
+                  </div>
+                  <div class="achievements__card">
+                    <img
+                      class="achievements__card-img"
+                      src="./img/hero_uri.png"
+                      alt="uri"
+                    />
+                  </div>
+                  <div class="achievements__card">
+                    <img
+                      class="achievements__card-img"
+                      src="./img/hero_lider.png"
+                      alt="lider"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="achievements__card">
-              <img
-                class="achievements__card-img"
-                src="./img/hero_uri.png"
-                alt="uri"
-              />
-            </div>
-            <div class="achievements__card">
-              <img
-                class="achievements__card-img"
-                src="./img/hero_lider.png"
-                alt="lider"
-              />
-            </div>
-            <div class="achievements__card">
-              <img
-                class="achievements__card-img"
-                src="./img/hero_uif.png"
-                alt="uif"
-              />
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
+
           <div class="achievements__wr achievements__wr--iner">
             <div class="achievements__card">
               <img
@@ -266,9 +344,9 @@
             </div>
           </div>
           <div class="achievements__pag">
-            <div class="pag pag--active"></div>
-            <div class="pag"></div>
-            <div class="pag"></div>
+            <div class="pag pag--active pag-iner"></div>
+            <div class="pag pag-iner"></div>
+            <div class="pag pag-iner"></div>
             <div class="pag pag-iner"></div>
             <div class="pag pag-iner"></div>
             <div class="pag pag-iner"></div>
@@ -276,7 +354,7 @@
         </div>
       </section>
     </main>
-     <div class="header__nav-wr">
+    <div class="header__nav-wr">
       <div class="header__nav-burger">
         <ul class="header__list-burger">
           <li class="header__item-burger">
@@ -342,6 +420,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

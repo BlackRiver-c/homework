@@ -610,8 +610,6 @@ body {
 @media (max-width: 850px) {
   .achievements__wr--iner {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
   }
 }
 .achievements__card {
@@ -673,7 +671,7 @@ body {
 .pag-iner {
   display: none;
 }
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   .pag-iner {
     display: block;
   }
@@ -823,6 +821,38 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 16px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 16px));
+  display: inline-block;
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  background: #24A3FF;
+}
+
+.swiper-pagination-bullet-active {
+  background: #006CCF;
+}
+
+.swiper-pagination-bullet:hover {
+  background: #0085FF;
+}
+
+.swiper-pagination {
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.swiper-pagination-bullet-active {
+  background: varvar(--active---regular);
+  opacity: 0.7;
+}
+
+@media (max-width: 850px) {
+  .achievements .swiper-pagination-bullet {
+    display: none;
+  }
 }
 
 .teams {
@@ -1308,82 +1338,11 @@ html {
 }
 
 .legal {
-  height: 250vh;
   background-image: url(../../../Hlegal/img/Symbol.png), linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
   background-repeat: no-repeat;
   background-position: top;
   margin-bottom: 60px;
   box-shadow: 0 4px 10px rgba(50, 50, 100, 0.5), 0 6px 20px rgba(100, 62, 114, 0.6), 0 10px 30px rgba(50, 50, 100, 0.3), 0 15px 40px rgba(100, 62, 114, 0.2);
-}
-@media (max-width: 1458px) {
-  .legal {
-    height: 280vh;
-  }
-}
-@media (max-width: 1038px) {
-  .legal {
-    height: 310vh;
-  }
-}
-@media (max-width: 896px) {
-  .legal {
-    height: 320vh;
-  }
-}
-@media (max-width: 840px) {
-  .legal {
-    height: 330vh;
-  }
-}
-@media (max-width: 826px) {
-  .legal {
-    height: 400vh;
-  }
-}
-@media (max-width: 809px) {
-  .legal {
-    height: 395vh;
-  }
-}
-@media (max-width: 702px) {
-  .legal {
-    height: 410vh;
-  }
-}
-@media (max-width: 626px) {
-  .legal {
-    height: 420vh;
-  }
-}
-@media (max-width: 569px) {
-  .legal {
-    height: 430vh;
-  }
-}
-@media (max-width: 510px) {
-  .legal {
-    height: 430vh;
-  }
-}
-@media (max-width: 484px) {
-  .legal {
-    height: 450vh;
-  }
-}
-@media (max-width: 456px) {
-  .legal {
-    height: 460vh;
-  }
-}
-@media (max-width: 438px) {
-  .legal {
-    height: 470vh;
-  }
-}
-@media (max-width: 410px) {
-  .legal {
-    height: 40vh;
-  }
 }
 .legal__wr {
   display: flex;
@@ -1410,7 +1369,8 @@ html {
   z-index: 1000;
   border: 2px solid var(--basic-white);
   border-radius: 100%;
-  padding: 10px 10px 10px 10px;
+  width: 32px;
+  height: 32px;
   opacity: 0.4;
   display: inline-flex;
   align-items: center;
@@ -1422,7 +1382,7 @@ html {
   opacity: 1;
 }
 .legal__info {
-  height: 100vh;
+  padding-bottom: 60px;
   margin: 60px 0;
 }
 .legal__info-wr {
@@ -1586,7 +1546,7 @@ html {
      object-fit: cover;
   border-radius: 12px 0 0 12px;
   max-width: 400px;
-  height: 276px;
+  height: 292px;
 }
 @media (max-width: 1406px) {
   .news__pic {
@@ -1679,7 +1639,7 @@ html {
 .trust__border-left {
   border-radius: 0 12px 0 0;
 }
-@media (max-width: 1308px) {
+@media (max-width: 1737px) {
   .trust__border-left {
     border-radius: 0;
   }

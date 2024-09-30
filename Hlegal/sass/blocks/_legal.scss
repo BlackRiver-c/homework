@@ -19,7 +19,6 @@ html {
 }
 
 .legal {
-    height: 250vh;
     background-image: url(../../../Hlegal/img/Symbol.png), linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
     background-repeat: no-repeat;
     background-position: top;
@@ -30,50 +29,50 @@ html {
         0 10px 30px rgba(50, 50, 100, 0.3),
         0 15px 40px rgba(100, 62, 114, 0.2);
     
-    @media (max-width: 1458px) {
-        height: 280vh;
-    }
-    
-    @media (max-width: 1038px) {
-        height: 310vh;
-    }
-    @media (max-width: 896px) {
-        height: 320vh;
-    }
-    
-    @media (max-width: 840px) {
-        height: 330vh;
-    }
-    @media (max-width: 826px) {
-        height: 400vh;
-    }
-    @media (max-width: 809px) {
-        height: 395vh;
-    }
-    @media (max-width: 702px) {
-        height: 410vh;
-    }
-    @media (max-width: 626px) {
-        height: 420vh;
-    }
-    @media (max-width: 569px) {
-        height: 430vh;
-    }
-    @media (max-width: 510px) {
-        height: 430vh;
-    }
-    @media (max-width: 484px) {
-        height: 450vh;
-    }
-    @media (max-width: 456px) {
-        height: 460vh;
-    }
-    @media (max-width: 438px) {
-        height: 470vh;
-    }
-    @media (max-width: 410px) {
-             height: 40vh;
-    }
+        // @media (max-width: 1458px) {
+        //     height: 280vh;
+        // }
+        
+        // @media (max-width: 1038px) {
+        //     height: 310vh;
+        // }
+        // @media (max-width: 896px) {
+        //     height: 320vh;
+        // }
+        
+        // @media (max-width: 840px) {
+        //     height: 330vh;
+        // }
+        // @media (max-width: 826px) {
+        //     height: 400vh;
+        // }
+        // @media (max-width: 809px) {
+        //     height: 395vh;
+        // }
+        // @media (max-width: 702px) {
+        //     height: 410vh;
+        // }
+        // @media (max-width: 626px) {
+        //     height: 420vh;
+        // }
+        // @media (max-width: 569px) {
+        //     height: 430vh;
+        // }
+        // @media (max-width: 510px) {
+        //     height: 430vh;
+        // }
+        // @media (max-width: 484px) {
+        //     height: 450vh;
+        // }
+        // @media (max-width: 456px) {
+        //     height: 460vh;
+        // }
+        // @media (max-width: 438px) {
+        //     height: 470vh;
+        // }
+        // @media (max-width: 410px) {
+        //         height: 40vh;
+        // }
 
     
 
@@ -104,7 +103,8 @@ html {
         z-index: 1000;
         border: 2px solid var(--basic-white);
         border-radius: 100%;
-        padding: 10px 10px 10px 10px;
+        width: 32px;
+        height: 32px;
         opacity: 0.4;
         display: inline-flex;
         align-items: center;
@@ -118,7 +118,7 @@ html {
     }
     
     &__info {
-        height: 100vh;
+        padding-bottom: 60px;
         margin: 60px 0;
         &-wr {
             display: flex;
