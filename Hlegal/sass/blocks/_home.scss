@@ -1,0 +1,24 @@
+
+.header {
+    
+    
+    &__top-btn-home,
+    &__top-link-home,
+    &__top-tel-home,
+    &__link-home {
+        color: var(--basic-white);
+        z-index: 1000;
+    }
+
+}
+.header__top-btn:hover {
+    border-radius: 8px;
+    padding: 5px 7px;
+    background: var(--grey---bg-);
+    color: var(--accent);
+}
+
+.header__top-face-home svg {
+    color: var(--basic-white);
+    transition: 0.5s;
+}

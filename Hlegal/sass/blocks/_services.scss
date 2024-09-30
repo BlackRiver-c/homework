@@ -1,0 +1,33 @@
+.header__home {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: position 0.5s;
+   
+}
+
+.services {
+    background-image: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
+    padding-top: 250px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    box-shadow:
+            0 4px 10px rgba(50, 50, 100, 0.5),
+            0 6px 20px rgba(100, 62, 114, 0.6),
+            0 10px 30px rgba(50, 50, 100, 0.3),
+            0 15px 40px rgba(100, 62, 114, 0.2);
+}
+.header__logo--link-serv {
+    color: var(--basic-white);
+}
+.serv__text {
+    margin-bottom: 60px;
+}
+.legal__right-title-serv {
+    color: var(--accent);
+}
+.trust__serv {
+    margin-bottom: 0;
+}
