@@ -613,6 +613,7 @@ body {
   }
 }
 .achievements__card {
+  width: 100%;
   display: flex;
   flex: 1 0 370px;
   height: 100%;
@@ -622,28 +623,6 @@ body {
   background: var(--basic-white);
   border-radius: 12px;
   margin-bottom: 30px;
-}
-@media (max-width: 1440px) {
-  .achievements__card {
-    flex: 1 0 300px;
-  }
-}
-@media (max-width: 1200px) {
-  .achievements__card {
-    flex: 1 0 200px;
-  }
-}
-@media (max-width: 970px) {
-  .achievements__card {
-    flex: 1 0 132px;
-    height: 90px;
-    width: 106px;
-  }
-}
-@media (max-width: 850px) {
-  .achievements__card {
-    flex: 1 0 255px;
-  }
 }
 .achievements__pag {
   display: flex;
@@ -847,12 +826,6 @@ body {
 .swiper-pagination-bullet-active {
   background: varvar(--active---regular);
   opacity: 0.7;
-}
-
-@media (max-width: 850px) {
-  .achievements .swiper-pagination-bullet {
-    display: none;
-  }
 }
 
 .teams {

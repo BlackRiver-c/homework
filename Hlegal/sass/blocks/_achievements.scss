@@ -29,6 +29,7 @@
     }
 
     &__card {
+        width: 100%;
         display: flex;
         flex: 1 0 370px;
         height: 100%;
@@ -39,21 +40,21 @@
         border-radius: 12px;
         margin-bottom: 30px;
 
-        @media (max-width: 1440px) {
-            flex: 1 0 300px;
-        }
-        @media (max-width: 1200px) {
-            flex: 1 0 200px;
-        }
-        @media (max-width: 970px) {
-            flex: 1 0 132px;
-            height: 90px;
-            width: 106px;
-        }
-        @media (max-width:850px) {
-            flex: 1 0 255px;
+        // @media (max-width: 1440px) {
+        //     flex: 1 0 300px;
+        // }
+        // @media (max-width: 1200px) {
+        //     flex: 1 0 200px;
+        // }
+        // @media (max-width: 970px) {
+        //     flex: 1 0 132px;
+        //     height: 90px;
+        // }
+        // @media (max-width:850px) {
+        //     flex: 1 0 255px;
             
-        }
+            
+        // }
        
     }
     &__pag {
