@@ -1647,15 +1647,6 @@ html {
   margin-bottom: 30px;
 }
 
-.publ__card {
-  display: flex;
-  align-items: stretch;
-  gap: 20px;
-  padding-bottom: 30px;
-  border-bottom: 3px solid var(--grey---separator);
-  flex-wrap: wrap;
-}
-
 .publ__card-wr {
   flex: 1 0 513px;
   display: flex;
@@ -1814,4 +1805,8 @@ html {
 
 .publ__card-border {
   border-bottom: 0;
+}
+
+.row {
+  gap: 20px;
 }/*# sourceMappingURL=main.css.map */
